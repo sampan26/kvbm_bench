@@ -1,0 +1,2 @@
+ 19-11-2025 23:18:47:414 [pid=246 tid=349] NOTICE  cufio-drv:830 running in compatible mode
+ 19-11-2025 23:19:17:468 [pid=246 tid=349] ERROR  cufio-fs:79 mount option not found in mount table data device: /dev/nvme0n1p2

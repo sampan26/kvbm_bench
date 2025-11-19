@@ -1,0 +1,71 @@
+
+--- Sending prompt 1/5 ---
+
+Response of request 0: <think>
+Okay, the user has sent a message that's just a bunch of "hi" repeated over and over. It looks like they might be testing the system or maybe they're trying to see how it responds to a lot of text. Let me check the history to see if there's any context.
+
+Hmm, the previous message was the same thing, just a long string of "hi". Maybe they're trying to see if the AI can handle repetitive input or if there's a pattern.
+
+--- Sending prompt 2/5 ---
+
+Response of request 1: <think>
+Okay, the user has sent a message that's just a bunch of "hi" repeated over and over. It looks like they might be testing the system or maybe they're trying to see how it responds to a lot of text. Let me think about how to handle this.
+
+First, I should acknowledge their message in a friendly way. Since it's repetitive, maybe they're just being playful or there's a typo. I should respond with something that's engaging but also sets a positive
+
+--- Sending prompt 3/5 ---
+
+Response of request 2: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. I need to figure out the best way to respond.
+
+First, I should acknowledge their message. Maybe they're just trying to see how the system handles a lot of input. But repeating "hi" so many times could be a way to check for a response or maybe they're having some kind of issue.
+
+--- Sending prompt 4/5 ---
+
+Response of request 3: <think>
+Okay, the user has sent a message that's just a bunch of "hi" repeated over and over. It looks like they might be testing the system or maybe they're trying to see how it responds to a lot of text. Let me think about how to handle this.
+
+First, I should acknowledge their message in a friendly way. Maybe say something like "Hello!" to start the conversation. Then, since there's a lot of repetition, I can ask if they need help with
+
+--- Sending prompt 5/5 ---
+
+Response of request 4: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. I need to figure out the best way to respond.
+
+First, I should acknowledge their message. Maybe they're just trying to see how the system handles a lot of input. But repeating "hi" so many times could be a way to check for a response or maybe they're having some kind of issue.
+Repeat mode:  tile
+------warm up round------
+
+--- Sending prompt 1/10 ---
+
+--- Sending prompt 2/10 ---
+Traceback (most recent call last):
+  File "/workspace/kvbm_bench/LMCache/benchmarks/long_doc_qa/long_doc_qa.py", line 704, in <module>
+    asyncio.run(main(args))
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/kvbm_bench/LMCache/benchmarks/long_doc_qa/long_doc_qa.py", line 450, in main
+    warmup_request_stats = await test_long_document_qa(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/kvbm_bench/LMCache/benchmarks/long_doc_qa/long_doc_qa.py", line 283, in test_long_document_qa
+    request_stats = await asyncio.gather(*tasks)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/kvbm_bench/LMCache/benchmarks/long_doc_qa/long_doc_qa.py", line 210, in process_single_prompt
+    response = await client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/dynamo/venv/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/dynamo/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/dynamo/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 32000 tokens. However, your request has 32009 input tokens. Please reduce the length of the input messages. None", 'type': 'BadRequestError', 'param': None, 'code': 400}}

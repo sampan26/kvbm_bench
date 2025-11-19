@@ -1,0 +1,33 @@
+
+--- Sending prompt 1/5 ---
+
+--- Sending prompt 2/5 ---
+Traceback (most recent call last):
+  File "/workspace/kvbm_bench/LMCache/benchmarks/long_doc_qa/long_doc_qa.py", line 704, in <module>
+    asyncio.run(main(args))
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/kvbm_bench/LMCache/benchmarks/long_doc_qa/long_doc_qa.py", line 429, in main
+    await test_long_document_qa(
+  File "/workspace/kvbm_bench/LMCache/benchmarks/long_doc_qa/long_doc_qa.py", line 283, in test_long_document_qa
+    request_stats = await asyncio.gather(*tasks)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/kvbm_bench/LMCache/benchmarks/long_doc_qa/long_doc_qa.py", line 210, in process_single_prompt
+    response = await client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/dynamo/venv/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/dynamo/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/dynamo/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `meta-llama/Llama-3.1-70B` does not exist.', 'type': 'NotFoundError', 'param': None, 'code': 404}}

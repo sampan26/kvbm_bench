@@ -21,7 +21,7 @@ CONFIG=""
 MODEL_SIZE="8B"
 RESULTS_DIR="./results"
 CUSTOM_PREFIX=""
-BENCHMARK_SCRIPT="../benchmarks/long_doc_qa/long_doc_qa.py"
+BENCHMARK_SCRIPT="LMCache/benchmarks/long_doc_qa/long_doc_qa.py"
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
@@ -94,7 +94,7 @@ if [[ "$MODEL_SIZE" == "8B" ]]; then
   MODEL="Qwen/Qwen3-8B"
   ISL_VALUES=(6000 8000 16000 32000 64000 128000)
 elif [[ "$MODEL_SIZE" == "70B" ]]; then
-  MODEL="meta-llama/Llama-3.1-70B"
+  MODEL="Qwen/Qwen2.5-72B-Instruct"
   ISL_VALUES=(6000 8000 16000 32000 64000 128000)
 else
   echo "Error: Model size must be 8B or 70B"
@@ -168,7 +168,7 @@ for isl in "${ISL_VALUES[@]}"; do
     --output-len "$OUTPUT_LEN" \
     --repeat-count "$REPEAT_COUNT" \
     --repeat-mode "$REPEAT_MODE" \
-    --cache-hit-miss-ratio "$CACHE_HIT_MISS_RATIO" \
+    --hit-miss-ratio "$CACHE_HIT_MISS_RATIO" \
     --max-inflight-requests "$MAX_INFLIGHT_REQUESTS" \
     2>&1 | tee "$OUTPUT_FILE"; then
     
