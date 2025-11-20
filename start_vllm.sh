@@ -92,7 +92,7 @@ fi
 
 # Model configurations
 if [[ "$MODEL_SIZE" == "8B" ]]; then
-   MODEL="Qwen/Qwen3-Next-80B-A3B-Instruct"
+   MODEL="Qwen/Qwen3-8B"
    TP=1
 elif [[ "$MODEL_SIZE" == "70B" ]]; then
    MODEL="Qwen/Qwen2.5-72B-Instruct"
