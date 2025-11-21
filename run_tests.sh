@@ -104,7 +104,7 @@ fi
 BASE_URL="http://localhost:8000"
 
 # Benchmark parameters
-NUM_DOCUMENTS=10
+NUM_DOCUMENTS=30
 OUTPUT_LEN=100
 REPEAT_COUNT=2
 REPEAT_MODE="tile"
