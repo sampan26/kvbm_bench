@@ -1,0 +1,736 @@
+Using base URL: http://localhost:8000/v1
+
+--- Sending prompt 1/5 ---
+
+Response of request 0: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. Let me see... They might be testing if I can handle repetitive text or maybe they're trying to see how I respond to spam. First, I should acknowledge their message but also let them know that repeating "hi" isn't helpful. I need to be polite and offer assistance. Maybe they have a specific question but are unsure how to phrase it. I should ask if there's something they need
+
+--- Sending prompt 2/5 ---
+
+Response of request 1: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "1xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 3/5 ---
+
+Response of request 2: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "2xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 4/5 ---
+
+Response of request 3: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "3xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 5/5 ---
+
+Response of request 4: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "4xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+Repeat mode:  tile
+------warm up round------
+
+--- Sending prompt 1/10 ---
+
+Response of request 0: 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+--- Sending prompt 2/10 ---
+
+Response of request 1: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. Let me figure out what they need. Maybe they're testing if I can handle repetitive text or if they want to see how I respond to spam-like messages. Alternatively, they might be trying to get a response in a specific way, like a game or a joke. I should check if there's a pattern or if they're using some kind of code or cipher. The repetition could be a way
+
+--- Sending prompt 3/10 ---
+
+Response of request 2: <think>
+Okay, the user has sent a long string of "hi" repeated many times. It looks like they might be testing the system or just being playful. I need to respond in a friendly and helpful manner. Let me check the history to see if there's a pattern. 
+
+Hmm, the user hasn't had any previous interactions. Maybe they're just experimenting. I should acknowledge their message with a cheerful tone and offer assistance. Let me make sure the response is positive and open-ended.
+
+--- Sending prompt 4/10 ---
+
+Response of request 3: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. It looks like they might be testing the system or just being playful. I need to respond in a friendly and engaging way without taking it too seriously. Let me see... Maybe they want to see how the AI handles repetitive input. I should acknowledge their message in a light-hearted manner and invite them to ask a real question or share something more meaningful. Let me make sure the response is positive and encourages
+
+--- Sending prompt 5/10 ---
+
+Response of request 4: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. It looks like they might be testing the system or just sending a lot of text. I need to figure out the best way to respond.
+
+First, I should acknowledge their message but maybe point out the repetition. They might not realize they're repeating it so much. Let me check if there's a pattern or if they're trying to get a specific response. The message is all "hi" and
+
+--- Sending prompt 6/10 ---
+
+Response of request 5: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. It looks like they might be testing the system or just sending a lot of text for some reason. I need to figure out the best way to respond.
+
+First, I should acknowledge their message. Maybe they're trying to see if I'm responsive. But the repetition is a bit odd. Perhaps they're experiencing a technical issue where their keyboard is stuck or they're just being playful. 
+
+I should
+
+--- Sending prompt 7/10 ---
+
+Response of request 6: <think>
+Okay, the user has sent a message with a lot of "hi" repeated many times. It seems like they might be testing the system or trying to see if I respond to repetitive inputs. I should acknowledge their greeting and offer assistance. Maybe they want to start a conversation but are unsure how to proceed. I'll keep it friendly and open-ended, letting them know I'm here to help with anything they need. I should also keep the response concise to avoid encouraging further repetition. Let
+
+--- Sending prompt 8/10 ---
+
+Response of request 7: 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+--- Sending prompt 9/10 ---
+
+Response of request 8: 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+--- Sending prompt 10/10 ---
+
+Response of request 9: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. It looks like they might be testing the system or just sending a lot of text. I need to figure out the best way to respond.
+
+First, I should acknowledge their message. Maybe they're trying to see if I can handle repetitive input. I should respond politely and ask if there's something specific they need help with. Let me check if there's any hidden request here. The message is all
+------query round------
+
+--- Sending prompt 1/20 ---
+
+Response of request 0: 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+--- Sending prompt 2/20 ---
+
+Response of request 1: <think>
+Okay, the user sent a message with a lot of repeated "hi" words. Let me figure out what they need. Maybe they're testing if I can handle repetitive input or if they want to see how I respond to spam. Alternatively, they might be trying to get a reaction or see if I can recognize the pattern.
+
+First, I should check if there's a hidden message or if it's just random repetition. The message is "hi hi hi..." repeated many times. It
+
+--- Sending prompt 3/20 ---
+
+Response of request 2: <think>
+Okay, the user has sent a long string of "hi" repeated many times. I need to figure out what they're trying to do here. Maybe they're testing how the system handles repetitive input, or perhaps they're just being playful. Let me check the history to see if there's a pattern.
+
+Looking at the previous messages, the user hasn't interacted much. They might be new or just experimenting. The repetition of "hi" could indicate they're not sure how to
+
+--- Sending prompt 4/20 ---
+
+Response of request 3: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. Let me figure out what they need. It's possible they're testing if I can handle repetitive text or maybe they're trying to see how I respond to spam. Alternatively, they might be experiencing a technical issue where their keyboard is repeating letters unintentionally.
+
+First, I should check if there's a pattern or if they're trying to send a specific message. The repetition of "hi" could be
+
+--- Sending prompt 5/20 ---
+
+Response of request 4: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. It looks like they might be testing something or just sending a lot of text. Let me check the message again. It's "4 hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 6/20 ---
+
+Response of request 5: <think>
+Okay, the user has sent a message that's just a bunch of repeated "hi" words. Let me figure out what they need. It looks like they might be testing something or maybe they're having trouble with their keyboard. The message is 2926687 characters long, which is way too long for a normal conversation. 
+
+First, I should check if there's a pattern or a specific request here. All the "hi"s could be a mistake, or
+
+--- Sending prompt 7/20 ---
+
+Response of request 6: <think>
+Okay, the user has sent a message that's just a bunch of repeated "hi" words. Let me figure out what they need. It looks like they might be testing something or maybe they're having trouble with their keyboard. The message is 4112040 characters long, which is way too long for a normal conversation. 
+
+First, I should check if there's a pattern or a specific request here. All the "hi"s could be a mistake, or
+
+--- Sending prompt 8/20 ---
+
+Response of request 7: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. Let me figure out what they need. It looks like they might be testing if I can handle repetitive text or maybe they're trying to see how I respond to spam. Alternatively, they could be practicing typing or have a typo. I should check if there's a hidden message or if they just want a greeting. Since it's all "hi" repeated, maybe they're looking for a response that
+
+--- Sending prompt 9/20 ---
+
+Response of request 8: <think>
+Okay, the user has sent a message that's just a bunch of repeated "hi" words. Let me figure out what they need. It's possible they're testing if I can handle repetitive input or maybe they're trying to see how I respond. But maybe there's another reason. Sometimes people send repeated messages by accident, like a typo or a misinput. I should check if there's any hidden message or if they're just being playful.
+
+First, I'll acknowledge their message
+
+--- Sending prompt 10/20 ---
+
+Response of request 9: <think>
+Okay, the user has sent a message that's just a series of numbers and the letter "hi" repeated many times. Let me try to figure out what they need. First, I should check if there's a pattern or a specific request here. The number 7155532 is followed by nine "hi"s. Maybe they're testing something or trying to see if I can handle repetitive input. 
+
+I need to respond in a way that's helpful and not
+
+--- Sending prompt 11/20 ---
+
+Response of request 10: 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+--- Sending prompt 12/20 ---
+
+Response of request 11: <think>
+Okay, the user sent a message with a lot of repeated "hi" words. Let me figure out what they need. Maybe they're testing if I can handle repetitive input or if they want to see how I respond to spam. Alternatively, they might be trying to get a reaction or see if I can recognize the pattern.
+
+First, I should check if there's a hidden message or if it's just random repetition. The message is "hi hi hi..." repeated many times. It
+
+--- Sending prompt 13/20 ---
+
+Response of request 12: <think>
+Okay, the user has sent a long string of "hi" repeated many times. I need to figure out what they're trying to do here. Maybe they're testing how the system handles repetitive input, or perhaps they're just being playful. Let me check the history to see if there's a pattern.
+
+Looking at the previous messages, the user hasn't interacted much. They might be new or just experimenting. The repetition of "hi" could indicate they're not sure how to
+
+--- Sending prompt 14/20 ---
+
+Response of request 13: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. Let me figure out what they need. It's possible they're testing if I can handle repetitive text or maybe they're trying to see how I respond to spam. Alternatively, they might be experiencing a technical issue where their keyboard is repeating letters unintentionally.
+
+First, I should check if there's a pattern or if they're trying to send a specific message. The repetition of "hi" could be
+
+--- Sending prompt 15/20 ---
+
+Response of request 14: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. It looks like they might be testing something or just sending a lot of text. Let me check the message again. It's "4 hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 16/20 ---
+
+Response of request 15: <think>
+Okay, the user has sent a message that's just a bunch of repeated "hi" words. Let me figure out what they need. 
+
+First, I should check if this is a test or if they're trying to see how I respond. Maybe they're practicing typing or testing the system's reaction. But since they used the same message multiple times, perhaps they want a response that acknowledges the repetition.
+
+I need to make sure I don't just echo their message. They might be
+
+--- Sending prompt 17/20 ---
+
+Response of request 16: <think>
+Okay, the user has sent a message that's just a bunch of repeated "hi" words. Let me figure out what they need. It looks like they might be testing the system or trying to see if I can handle repetitive input. But maybe they're having trouble with their keyboard or want to check if I can respond to non-sensical messages.
+
+First, I should acknowledge their message in a friendly way. Since it's repetitive, I don't want to just repeat the same
+
+--- Sending prompt 18/20 ---
+
+Response of request 17: <think>
+Okay, the user has sent a message that's just a bunch of repeated "hi" words. Let me figure out what they need. It looks like they might be testing the system or trying to see if I can handle repetitive input. But maybe they're having trouble with their keyboard or want to check if I can respond to non-sensical messages.
+
+First, I should acknowledge their message in a friendly way. Since it's repetitive, I don't want to just repeat the same
+
+--- Sending prompt 19/20 ---
+
+Response of request 18: <think>
+Okay, the user has sent a message that's just a bunch of repeated "hi" words. Let me figure out what they need. 
+
+First, I should check if this is a test or if they're trying to see how I respond to repetitive input. Maybe they're practicing something or just messing around. But I should also consider if there's a real request here. 
+
+Looking at the message, it's 5991940 followed by a lot of "
+
+--- Sending prompt 20/20 ---
+
+Response of request 19: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. Let me figure out what they need. It looks like they might be testing if I can handle repetitive text or maybe they're trying to see how I respond to spam. Alternatively, they could be practicing typing or have a typo. I should check if there's a hidden message or if they want to communicate something else.
+
+First, I'll count the number of "hi" repetitions. Let me see
+Warmup round mean TTFT: 0.177s
+Warmup round time: 7.870s
+Warmup round prompt count: 10
+Warmup round successful prompt count: 10
+[36;1m
+=== BENCHMARK RESULTS ===[0m
+[32mQuery round mean TTFT: 0.135s[0m
+[33mQuery round time: 14.867s[0m
+[35mQuery round prompt count: 20[0m
+[34mQuery round successful prompt count: 20[0m
