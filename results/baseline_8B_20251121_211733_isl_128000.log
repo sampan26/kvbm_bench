@@ -1,0 +1,514 @@
+Using base URL: http://localhost:8000/v1
+
+--- Sending prompt 1/5 ---
+
+Response of request 0: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. Let me see... They might be testing if I can handle repetitive text or maybe they're trying to see how I respond to spam. First, I should acknowledge their message but also let them know that repeating "hi" isn't helpful. I need to be polite and offer assistance. Maybe they have a specific question but didn't phrase it properly. I should ask them to clarify what they need help
+
+--- Sending prompt 2/5 ---
+
+Response of request 1: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "1xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 3/5 ---
+
+Response of request 2: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "2xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 4/5 ---
+
+Response of request 3: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "3xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 5/5 ---
+
+Response of request 4: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "4xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+Repeat mode:  tile
+------warm up round------
+
+--- Sending prompt 1/30 ---
+
+Response of request 0: Okay, I'm here to help you with your hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 2/30 ---
+
+Response of request 1:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 3/30 ---
+
+Response of request 2:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 4/30 ---
+
+Response of request 3: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 5/30 ---
+
+Response of request 4:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 6/30 ---
+
+Response of request 5:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 7/30 ---
+
+Response of request 6:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 8/30 ---
+
+Response of request 7:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 9/30 ---
+
+Response of request 8:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 10/30 ---
+
+Response of request 9: Okay, I need to help you with the hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 11/30 ---
+
+Response of request 10: Okay, I need to help you with the hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 12/30 ---
+
+Response of request 11:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 13/30 ---
+
+Response of request 12: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 14/30 ---
+
+Response of request 13:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 15/30 ---
+
+Response of request 14: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 16/30 ---
+
+Response of request 15:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 17/30 ---
+
+Response of request 16:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 18/30 ---
+
+Response of request 17:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 19/30 ---
+
+Response of request 18: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 20/30 ---
+
+Response of request 19:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 21/30 ---
+
+Response of request 20:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 22/30 ---
+
+Response of request 21: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 23/30 ---
+
+Response of request 22:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 24/30 ---
+
+Response of request 23:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 25/30 ---
+
+Response of request 24: Okay, I'm here. Let me know what you need. I'm a bit confused. You wrote a lot of "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 26/30 ---
+
+Response of request 25: Okay, I'm here. Let me know what you're asking? It seems like you're sending a lot of "hi" messages. Is there something specific you want to say?
+
+Okay, I'm here. Let me know what you're asking? It seems like you're sending a lot of "hi" messages. Is there something specific you want to say?
+
+Okay, I'm here. Let me know what you're asking? It seems like you're sending a lot of "hi"
+
+--- Sending prompt 27/30 ---
+
+Response of request 26: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 28/30 ---
+
+Response of request 27: Okay, I see that you've been repeating the word "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 29/30 ---
+
+Response of request 28: Okay, I see the pattern here. It seems like you're repeating the word "hi" multiple times. Could you please provide a more detailed query or clarify what you're looking for? I'm here to help you. 
+
+Okay, I see the pattern here. It seems like you're repeating the word "hi" multiple times. Could you please provide a more detailed query or clarify what you're looking for? I'm here to help you.
+</think> hi hi hi hi hi hi hi hi
+
+--- Sending prompt 30/30 ---
+
+Response of request 29: Okay, I see the pattern in your message. It seems like you're repeating the word "hi" multiple times. Could you please clarify what you're asking for? Are you looking for a specific answer or just practicing the word? Let me know how I can help.
+
+Okay, I see the pattern in your message. It seems like you're repeating the word "hi" multiple times. Could you please clarify what you're asking for? Are you looking for a specific answer or just practicing the
+------query round------
+
+--- Sending prompt 1/60 ---
+
+Response of request 0: Okay, I'm here to help you with your hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 2/60 ---
+
+Response of request 1:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 3/60 ---
+
+Response of request 2:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 4/60 ---
+
+Response of request 3: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 5/60 ---
+
+Response of request 4:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 6/60 ---
+
+Response of request 5: Okay, I see the pattern in your message. It seems like you're repeating the word "hi" multiple times. Could you clarify what you're asking? Maybe you want to say something else? Let me know how I can help.
+
+</think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 7/60 ---
+
+Response of request 6: Okay, I'm here. Let me know what you need help with. Let me know what you need help with. Let me know what you need help with. Let me know what you need help with. Let me know what you want to know. Let me know what you need to know. Let me know what you want to know. Let me know what you need to know. Let me know what you want to know. Let me know what you need to know. Let me know what
+
+--- Sending prompt 8/60 ---
+
+Response of request 7: Okay, I'm here. Let me know what you need help with? I'm here to help you. Let me know what you need help with? I'm here to assist you. Let me know what you need help with? I'm here to support you. Let me know what you need assistance with? I'm here to provide help with? I'm here to offer support with? I'm here to give guidance with? I'm here to offer assistance with? I'm here to provide
+
+--- Sending prompt 9/60 ---
+
+Response of request 8: Okay, I'm here. Let me know what you need help. I'm here to help you. Let me know what you need. I'm here to assist you. Let me know what you want. I'm here to support you. Let me know what you need. I'm here to guide you. Let me know what you want. I'm here to assist you. Let me know what you need. I'm here to help you. Let me know what you want. I'm
+
+--- Sending prompt 10/60 ---
+
+Response of request 9: Okay, I'm here to help you with your hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 11/60 ---
+
+Response of request 10: Okay, I need to help you with the hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 12/60 ---
+
+Response of request 11:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 13/60 ---
+
+Response of request 12: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 14/60 ---
+
+Response of request 13:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 15/60 ---
+
+Response of request 14: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 16/60 ---
+
+Response of request 15: Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is
+
+--- Sending prompt 17/60 ---
+
+Response of request 16: Okay, I need to help you with the hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 18/60 ---
+
+Response of request 17: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 19/60 ---
+
+Response of request 18: Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is
+
+--- Sending prompt 20/60 ---
+
+Response of request 19: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 21/60 ---
+
+Response of request 20:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 22/60 ---
+
+Response of request 21: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 23/60 ---
+
+Response of request 22:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 24/60 ---
+
+Response of request 23:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 25/60 ---
+
+Response of request 24: Okay, I'm here. Let me know what you need. I'm a bit confused. You wrote a lot of "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 26/60 ---
+
+Response of request 25: Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is
+
+--- Sending prompt 27/60 ---
+
+Response of request 26: Okay, I'm here. Let me know what you need help with? I'm here to help you. Let me know what you need?
+
+Okay, I'm here to help you. What's the issue you're facing? Let me know how I can assist you better.
+
+It seems like you might be having trouble with a message that has a lot of repeated "hi" and "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 28/60 ---
+
+Response of request 27: Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is
+
+--- Sending prompt 29/60 ---
+
+Response of request 28: Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is
+
+--- Sending prompt 30/60 ---
+
+Response of request 29: Okay, I see the input you provided. It seems like you're sending a lot of "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 31/60 ---
+
+Response of request 30: Okay, I'm here to help you with your hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 32/60 ---
+
+Response of request 31:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 33/60 ---
+
+Response of request 32:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 34/60 ---
+
+Response of request 33: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 35/60 ---
+
+Response of request 34:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 36/60 ---
+
+Response of request 35: Okay, I'm here. Let me know what you need help with? I'm here to help you. Please let me know what you need.
+
+Okay, I'm here to help you. Let me know what you need. Please provide the question or the task you want to do, and I'll do my best to assist you. 😊
+
+Okay, I'm here to help you. Let me know what you need assistance with. Please provide the question or the task you want to do
+
+--- Sending prompt 37/60 ---
+
+Response of request 36: Okay, I'm here. How can I help you? What's your question?
+
+Okay, I'm here. How can I help you? What's your question?
+</think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 38/60 ---
+
+Response of request 37: Okay, I'm here. Let me know what you need help with? I'm here to help you. Let me know what you need help with? I'm here to assist you. Let me know what you need help with? I'm here to support you. Let me know what you need assistance with? I'm here to provide help with? I'm here to offer support with? I'm here to give guidance with? I'm here to offer assistance with? I'm here to provide
+
+--- Sending prompt 39/60 ---
+
+Response of request 38: Okay, I'm here. Let me know what you're asking? It seems like you're sending a lot of "hi" messages. Are you trying to test the system or is there a specific question you want to ask? 
+
+I'm here to help you. What's the question? Let me know what you need.
+
+If you have a question, feel free to ask. I'm here to help you. Just say what you need.
+</think> hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 40/60 ---
+
+Response of request 39: Okay, I see the number you provided. Let me know what you're asking. It seems like you're sending a lot of "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 41/60 ---
+
+Response of request 40: Okay, I need to help you with the hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 42/60 ---
+
+Response of request 41:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 43/60 ---
+
+Response of request 42: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 44/60 ---
+
+Response of request 43:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 45/60 ---
+
+Response of request 44: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 46/60 ---
+
+Response of request 45: Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is
+
+--- Sending prompt 47/60 ---
+
+Response of request 46: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 48/60 ---
+
+Response of request 47: Okay, let's see what you need help with the hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 49/60 ---
+
+Response of request 48: Okay, I'm here. Let me know what you need help with the hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 50/60 ---
+
+Response of request 49: Okay, I'm here. Let me know what you need help with the hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 51/60 ---
+
+Response of request 50:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 52/60 ---
+
+Response of request 51: hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 53/60 ---
+
+Response of request 52:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 54/60 ---
+
+Response of request 53:  hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 55/60 ---
+
+Response of request 54: Okay, I'm here. Let me know what you need. I'm a bit confused. You wrote a lot of "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 56/60 ---
+
+Response of request 55: Okay, I need to help you with the hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 57/60 ---
+
+Response of request 56: Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is
+
+--- Sending prompt 58/60 ---
+
+Response of request 57: Okay, let's see what you need help with. I'm here to help you. I can help you with the hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 59/60 ---
+
+Response of request 58: Okay, I'm here. Let me know what you need help with the hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 60/60 ---
+
+Response of request 59: Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is about.
+
+Okay, I need to solve this problem. Let me see what it is
+Warmup round mean TTFT: 11.245s
+Warmup round time: 369.254s
+Warmup round prompt count: 30
+Warmup round successful prompt count: 30
+[36;1m
+=== BENCHMARK RESULTS ===[0m
+[32mQuery round mean TTFT: 11.253s[0m
+[33mQuery round time: 738.983s[0m
+[35mQuery round prompt count: 60[0m
+[34mQuery round successful prompt count: 60[0m
