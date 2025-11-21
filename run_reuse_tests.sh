@@ -124,9 +124,9 @@ DOCUMENT_LENGTH=32000  # Fixed 32K ISL
 OUTPUT_LEN=100         # Consistent generation phase
 REPEAT_COUNT=5         # Enough iterations to show reuse pattern
 REPEAT_MODE="tile"     # Predictable reuse pattern
-NUM_DOCUMENTS=30       # Sufficient pool for hit/miss patterns
+NUM_DOCUMENTS=20       # Sufficient pool for hit/miss patterns
 MAX_INFLIGHT_REQUESTS=1  # Isolate single request behavior
-MAX_TOKENS=32768       # Fixed max tokens
+MAX_TOKENS=65536       # Fixed max tokens
 
 # Create results directory
 mkdir -p "$RESULTS_DIR"
