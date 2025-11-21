@@ -113,17 +113,17 @@ sleep 3
 case $CONFIG in
    "baseline")
        echo "Starting BASELINE configuration (no prefix caching, no connector)"
-       CMD="vllm serve $ENFORCE_EAGER --port $PORT --gpu-memory-utilization 0.80 --max-model-len 131072 --disable-log-requests"
+       CMD="vllm serve $ENFORCE_EAGER --port $PORT --gpu-memory-utilization 0.80 --rope-scaling '{\"rope_type\":\"yarn\",\"factor\":4.0,\"original_max_position_embeddings\":32768}' --max-model-len 131072 --disable-log-requests"
        ;;
   
    "production")
        echo "Starting PRODUCTION configuration (prefix caching + connector)"
-       CMD="DYN_KVBM_CPU_CACHE_GB=100 DYN_KVBM_DISK_CACHE_GB=100 DYN_KVBM_LEADER_WORKER_INIT_TIMEOUT_SECS=1200 VLLM_SERVER_DEV_MODE=1 RUST_BACKTRACE=1 vllm serve $ENFORCE_EAGER --disable-log-requests --port $PORT --gpu-memory-utilization 0.80 --max-model-len 131072 --kv-transfer-config '{\"kv_connector\":\"DynamoConnector\",\"kv_role\":\"kv_both\", \"kv_connector_module_path\": \"kvbm.vllm_integration.connector\"}'"
+       CMD="DYN_KVBM_CPU_CACHE_GB=100 DYN_KVBM_DISK_CACHE_GB=100 DYN_KVBM_LEADER_WORKER_INIT_TIMEOUT_SECS=1200 VLLM_SERVER_DEV_MODE=1 RUST_BACKTRACE=1 vllm serve $ENFORCE_EAGER --disable-log-requests --port $PORT --gpu-memory-utilization 0.80 --rope-scaling '{\"rope_type\":\"yarn\",\"factor\":4.0,\"original_max_position_embeddings\":32768}' --max-model-len 131072 --kv-transfer-config '{\"kv_connector\":\"DynamoConnector\",\"kv_role\":\"kv_both\", \"kv_connector_module_path\": \"kvbm.vllm_integration.connector\"}'"
        ;;
   
    "connector")
        echo "Starting CONNECTOR configuration (no prefix caching, connector only)"
-       CMD="DYN_KVBM_CPU_CACHE_GB=100 DYN_KVBM_LEADER_WORKER_INIT_TIMEOUT_SECS=1200 RUST_BACKTRACE=1 DYN_LOG=info,_core::llm::block_manager::vllm::connector::worker=error,dynamo_llm::block_manager::block=error vllm serve $ENFORCE_EAGER --port $PORT --gpu-memory-utilization 0.80 --max-model-len 131072 --disable-log-requests --no-enable-prefix-caching --kv-transfer-config '{\"kv_connector\":\"DynamoConnector\",\"kv_role\":\"kv_both\", \"kv_connector_module_path\": \"kvbm.vllm_integration.connector\"}'"
+       CMD="DYN_KVBM_CPU_CACHE_GB=100 DYN_KVBM_LEADER_WORKER_INIT_TIMEOUT_SECS=1200 RUST_BACKTRACE=1 DYN_LOG=info,_core::llm::block_manager::vllm::connector::worker=error,dynamo_llm::block_manager::block=error vllm serve $ENFORCE_EAGER --port $PORT --gpu-memory-utilization 0.80 --rope-scaling '{\"rope_type\":\"yarn\",\"factor\":4.0,\"original_max_position_embeddings\":32768}' --max-model-len 131072 --disable-log-requests --no-enable-prefix-caching --kv-transfer-config '{\"kv_connector\":\"DynamoConnector\",\"kv_role\":\"kv_both\", \"kv_connector_module_path\": \"kvbm.vllm_integration.connector\"}'"
        ;;
 
    "lmcache")
