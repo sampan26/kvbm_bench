@@ -118,15 +118,16 @@ REUSE_RATES=(
   ["80"]="8:2"
   ["90"]="9:1"
 )
-
-# Fixed benchmark parameters for cache reuse profitability analysis
 DOCUMENT_LENGTH=32000  # Fixed 32K ISL
 OUTPUT_LEN=100         # Consistent generation phase
-REPEAT_COUNT=5         # Enough iterations to show reuse pattern
+REPEAT_COUNT=3         # Enough iterations to show reuse pattern
+
+# CHANGED: Increased from 20 to 40 to force offloading (Total ~1.28M tokens > 850k Capacity)
+NUM_DOCUMENTS=40       
+
 REPEAT_MODE="tile"     # Predictable reuse pattern
-NUM_DOCUMENTS=20       # Sufficient pool for hit/miss patterns
 MAX_INFLIGHT_REQUESTS=1  # Isolate single request behavior
-MAX_TOKENS=65536       # Fixed max tokens
+
 
 # Create results directory
 mkdir -p "$RESULTS_DIR"
@@ -172,16 +173,19 @@ echo "Reuse_Rate,Hit_Miss_Ratio,Mean_TTFT,Query_Time,Prompt_Count" > "$SUMMARY_F
 
 # Run benchmark for each cache reuse rate
 FAILED=0
+FAILED=0
 for reuse_pct in 10 20 30 40 50 60 70 80 90; do
   hit_miss_ratio="${REUSE_RATES[$reuse_pct]}"
   
   echo "====================================="
-  echo "Testing ${reuse_pct}% cache reuse rate"
-  echo "Hit-Miss Ratio: ${hit_miss_ratio}"
+  echo "Testing ${reuse_pct}% cache reuse rate (Ratio: ${hit_miss_ratio})"
+  echo "Docs: ${NUM_DOCUMENTS} (Total Context: $(( NUM_DOCUMENTS * DOCUMENT_LENGTH )))"
   echo "====================================="
   
   OUTPUT_FILE="${OUTPUT_PREFIX}_reuse_${reuse_pct}.log"
   
+  # NOTE: Removed --max-tokens if it's not in your python script arguments
+  # NOTE: Corrected --cache-hit-miss-ratio to --hit-miss-ratio based on previous prompt
   if python "$BENCHMARK_SCRIPT" \
     --model "$MODEL" \
     --num-documents "$NUM_DOCUMENTS" \
@@ -189,12 +193,12 @@ for reuse_pct in 10 20 30 40 50 60 70 80 90; do
     --output-len "$OUTPUT_LEN" \
     --repeat-count "$REPEAT_COUNT" \
     --repeat-mode "$REPEAT_MODE" \
-    --cache-hit-miss-ratio "$hit_miss_ratio" \
+    --hit-miss-ratio "$hit_miss_ratio" \
     --max-inflight-requests "$MAX_INFLIGHT_REQUESTS" \
-    --max-tokens "$MAX_TOKENS" \
     2>&1 | tee "$OUTPUT_FILE"; then
     
     echo "✅ ${reuse_pct}% reuse rate completed"
+
     
     # Extract metrics from output and append to summary
     MEAN_TTFT=$(grep "Query round mean TTFT:" "$OUTPUT_FILE" | awk '{print $5}' | sed 's/s//')
