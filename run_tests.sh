@@ -104,7 +104,6 @@ fi
 BASE_URL="http://localhost:8000"
 
 # Benchmark parameters
-NUM_DOCUMENTS=30
 OUTPUT_LEN=100
 REPEAT_COUNT=2
 REPEAT_MODE="tile"
@@ -155,15 +154,28 @@ echo "ISL,Mean_TTFT,Query_Time,Prompt_Count" > "$SUMMARY_FILE"
 # Run benchmark for each ISL value
 FAILED=0
 for isl in "${ISL_VALUES[@]}"; do
+  # Dynamic Document Calculation to force offloading
+  # Goal: Exceed ~850k tokens total to force eviction on 144GB GPU (assuming ~1.1M target)
+  case $isl in
+      6000)   CURRENT_NUM_DOCS=190 ;; # ~1.14M tokens
+      8000)   CURRENT_NUM_DOCS=140 ;; # ~1.12M tokens
+      16000)  CURRENT_NUM_DOCS=70  ;; # ~1.12M tokens
+      32000)  CURRENT_NUM_DOCS=35  ;; # ~1.12M tokens
+      64000)  CURRENT_NUM_DOCS=18  ;; # ~1.15M tokens
+      128000) CURRENT_NUM_DOCS=9   ;; # ~1.15M tokens
+      *)      CURRENT_NUM_DOCS=30  ;; # Fallback
+  esac
+
   echo "====================================="
   echo "Running benchmark with ISL: ${isl}"
+  echo "Documents: ${CURRENT_NUM_DOCS} (Total Context: $(( isl * CURRENT_NUM_DOCS )))"
   echo "====================================="
   
   OUTPUT_FILE="${OUTPUT_PREFIX}_isl_${isl}.log"
   
   if python "$BENCHMARK_SCRIPT" \
     --model "$MODEL" \
-    --num-documents "$NUM_DOCUMENTS" \
+    --num-documents "$CURRENT_NUM_DOCS" \
     --document-length "$isl" \
     --output-len "$OUTPUT_LEN" \
     --repeat-count "$REPEAT_COUNT" \
