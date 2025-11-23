@@ -22,7 +22,7 @@ CONFIG=""
 MODEL_SIZE="8B"
 RESULTS_DIR="./results"
 CUSTOM_PREFIX=""
-BENCHMARK_SCRIPT="../benchmarks/long_doc_qa/long_doc_qa.py"
+BENCHMARK_SCRIPT="LMCache/benchmarks/long_doc_qa/long_doc_qa.py"
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
