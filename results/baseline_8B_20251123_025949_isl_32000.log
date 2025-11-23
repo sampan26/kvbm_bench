@@ -1,0 +1,936 @@
+Using base URL: http://localhost:8000/v1
+
+--- Sending prompt 1/5 ---
+
+Response of request 0: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. Let me see... They might be testing if I can handle repetitive text or maybe they're trying to see how I respond to spam. First, I should acknowledge their message but also let them know that repeating "hi" isn't helpful. I need to be polite and offer assistance. Maybe they have a specific question but didn't phrase it properly. I should ask them to clarify what they need help
+
+--- Sending prompt 2/5 ---
+
+Response of request 1: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "1xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 3/5 ---
+
+Response of request 2: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "2xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 4/5 ---
+
+Response of request 3: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "3xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 5/5 ---
+
+Response of request 4: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "4xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+Repeat mode:  tile
+------warm up round------
+
+--- Sending prompt 1/35 ---
+
+Response of request 0: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It seems like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+
+--- Sending prompt 2/35 ---
+
+Response of request 1: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 3/35 ---
+
+Response of request 2: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 4/35 ---
+
+Response of request 3: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 5/35 ---
+
+Response of request 4: <think>
+Okay, I see you're using a lot of "hi" in your message. It seems like you might be testing or practicing something. Could you clarify what you're trying to do? Are you looking for a specific type of response or interaction? Maybe you can provide more details or ask a question? I'm here to help! 😊
+</think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 6/35 ---
+
+Response of request 5: <think>
+Okay, I see you there. So, I need to ask something. Let me think about what I can do. I'm not sure what to say. Maybe I should just say "hi" and then stop. But I'm here to chat with you. I'm not sure why I'm here. Maybe I'm just testing. I'm not sure if I'm testing. I'm not sure if I'm doing this. I'm not sure why I'm doing this. Maybe
+
+--- Sending prompt 7/35 ---
+
+Response of request 6: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 8/35 ---
+
+Response of request 7: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 9/35 ---
+
+Response of request 8: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 10/35 ---
+
+Response of request 9: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+
+--- Sending prompt 11/35 ---
+
+Response of request 10: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're
+
+--- Sending prompt 12/35 ---
+
+Response of request 11: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 13/35 ---
+
+Response of request 12: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 14/35 ---
+
+Response of request 13: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 15/35 ---
+
+Response of request 14: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 16/35 ---
+
+Response of request 15: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 17/35 ---
+
+Response of request 16: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 18/35 ---
+
+Response of request 17: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 19/35 ---
+
+Response of request 18: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 20/35 ---
+
+Response of request 19: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 21/35 ---
+
+Response of request 20: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're
+
+--- Sending prompt 22/35 ---
+
+Response of request 21: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to convey a specific message? Let me know how I can assist you better.
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to convey a specific message? Let me
+
+--- Sending prompt 23/35 ---
+
+Response of request 22: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 24/35 ---
+
+Response of request 23: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 25/35 ---
+
+Response of request 24: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+
+--- Sending prompt 26/35 ---
+
+Response of request 25: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+
+--- Sending prompt 27/35 ---
+
+Response of request 26: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It seems like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+
+--- Sending prompt 28/35 ---
+
+Response of request 27: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to convey a specific message? Let me know how I can assist you better.
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to convey a specific message? Let me
+
+--- Sending prompt 29/35 ---
+
+Response of request 28: <think>
+Okay, I see you've been repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 30/35 ---
+
+Response of request 29: <think>
+Okay, I see you're sending a lot of "hi hi hi" messages. It seems like you might be testing or practicing something. Let me know how I can help you! Are you trying to send a message or test the system? If you have a specific question or need assistance with something, please let me know! I'm here to help! 😊
+
+</think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 31/35 ---
+
+Response of request 30: <think>
+Okay, I see you're sending a lot of "hi hi hi" messages. It seems like you might be testing or practicing something. Let me know how I can assist you better. Are you trying to send a message, practice typing, or maybe you're using this as a way to get my attention? Let me know what you need help with, and I'll do my best to help!
+</think>
+
+Okay, I see you're sending a lot of "hi hi hi"
+
+--- Sending prompt 32/35 ---
+
+Response of request 31: <think>
+Okay, I see you've been repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 33/35 ---
+
+Response of request 32: <think>
+Okay, I see you've been repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 34/35 ---
+
+Response of request 33: <think>
+Okay, I see you're having a lot of fun with that hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 35/35 ---
+
+Response of request 34: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+------query round------
+
+--- Sending prompt 1/70 ---
+
+Response of request 0: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It seems like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+
+--- Sending prompt 2/70 ---
+
+Response of request 1: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 3/70 ---
+
+Response of request 2: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 4/70 ---
+
+Response of request 3: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 5/70 ---
+
+Response of request 4: <think>
+Okay, I see you're using a lot of "hi" in your message. It seems like you might be testing or practicing something. Could you clarify what you're trying to do? Are you looking for a specific type of response or interaction? Maybe you can provide more details or ask a question? I'm here to help! 😊
+</think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 6/70 ---
+
+Response of request 5: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+--- Sending prompt 7/70 ---
+
+Response of request 6: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+
+
+--- Sending prompt 8/70 ---
+
+Response of request 7: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? 😊
+
+--- Sending prompt 9/70 ---
+
+Response of request 8: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+
+
+--- Sending prompt 10/70 ---
+
+Response of request 9: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What would you like to do? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+</think>
+
+Okay, I see the pattern here. It seems like you're repeating the word "hi" multiple times. What would you like to do? Are you testing something or is there a specific question you want
+
+--- Sending prompt 11/70 ---
+
+Response of request 10: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're
+
+--- Sending prompt 12/70 ---
+
+Response of request 11: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 13/70 ---
+
+Response of request 12: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 14/70 ---
+
+Response of request 13: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 15/70 ---
+
+Response of request 14: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 16/70 ---
+
+Response of request 15: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+--- Sending prompt 17/70 ---
+
+Response of request 16: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+
+--- Sending prompt 18/70 ---
+
+Response of request 17: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to convey a specific message? Let me know how I can assist you better.
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to convey a specific message? Let me
+
+--- Sending prompt 19/70 ---
+
+Response of request 18: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+--- Sending prompt 20/70 ---
+
+Response of request 19: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific request you want to make? Let me know how I can assist you better.
+</think>
+
+Okay, I see the pattern here. It seems like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific request you
+
+--- Sending prompt 21/70 ---
+
+Response of request 20: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+Okay, I see you're
+
+--- Sending prompt 22/70 ---
+
+Response of request 21: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to convey a specific message? Let me know how I can assist you better.
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to convey a specific message? Let me
+
+--- Sending prompt 23/70 ---
+
+Response of request 22: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 24/70 ---
+
+Response of request 23: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 25/70 ---
+
+Response of request 24: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+
+--- Sending prompt 26/70 ---
+
+Response of request 25: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're
+
+--- Sending prompt 27/70 ---
+
+Response of request 26: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're
+
+--- Sending prompt 28/70 ---
+
+Response of request 27: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're
+
+--- Sending prompt 29/70 ---
+
+Response of request 28: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're
+
+--- Sending prompt 30/70 ---
+
+Response of request 29: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+--- Sending prompt 31/70 ---
+
+Response of request 30: <think>
+Okay, I see you're sending a lot of "hi hi hi" messages. It seems like you might be testing or practicing something. Let me know how I can assist you better. Are you trying to send a message, practice typing, or maybe you're using this as a way to get my attention? Let me know what you need help with, and I'll do my best to help!
+</think>
+
+Okay, I see you're sending a lot of "hi hi hi"
+
+--- Sending prompt 32/70 ---
+
+Response of request 31: <think>
+Okay, I see you've been repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 33/70 ---
+
+Response of request 32: <think>
+Okay, I see you've been repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 34/70 ---
+
+Response of request 33: <think>
+Okay, I see you're having a lot of fun with that hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 35/70 ---
+
+Response of request 34: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+
+--- Sending prompt 36/70 ---
+
+Response of request 35: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+--- Sending prompt 37/70 ---
+
+Response of request 36: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're
+
+--- Sending prompt 38/70 ---
+
+Response of request 37: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're
+
+--- Sending prompt 39/70 ---
+
+Response of request 38: <think>
+Okay, I see that you've been repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 40/70 ---
+
+Response of request 39: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+--- Sending prompt 41/70 ---
+
+Response of request 40: <think>
+Okay, I see you there. So, I need to ask something. Let me think about what I can do. I'm not sure what to say. Maybe I should just say "hi" and then stop. But I'm here to chat with you. I'm not sure why I'm here. Maybe I'm just testing. I'm not sure if I'm testing. I'm not sure if I'm doing this. I'm not sure why I'm doing this. Maybe
+
+--- Sending prompt 42/70 ---
+
+Response of request 41: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 43/70 ---
+
+Response of request 42: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 44/70 ---
+
+Response of request 43: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 45/70 ---
+
+Response of request 44: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+
+--- Sending prompt 46/70 ---
+
+Response of request 45: <think>
+Okay, I see you're sending a lot of "hi" messages. What's the purpose of this? Are you testing something or trying to communicate in a different way? Let me know how I can assist you better. 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's the purpose of this? Are you testing something or trying to communicate in a different way? Let me know how I can assist you better. 😊
+
+--- Sending prompt 47/70 ---
+
+Response of request 46: <think>
+Okay, I see that you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+Okay, I see that you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see that you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see that you're sending a lot of "hi" messages. What's going on
+
+--- Sending prompt 48/70 ---
+
+Response of request 47: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going
+
+--- Sending prompt 49/70 ---
+
+Response of request 48: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+
+
+--- Sending prompt 50/70 ---
+
+Response of request 49: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to communicate a specific message? Let me know how I can assist you better.
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to communicate a specific message? Let me
+
+--- Sending prompt 51/70 ---
+
+Response of request 50: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 52/70 ---
+
+Response of request 51: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 53/70 ---
+
+Response of request 52: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 54/70 ---
+
+Response of request 53: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 55/70 ---
+
+Response of request 54: <think>
+Okay, I see you're repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 56/70 ---
+
+Response of request 55: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+--- Sending prompt 57/70 ---
+
+Response of request 56: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+--- Sending prompt 58/70 ---
+
+Response of request 57: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on?
+
+--- Sending prompt 59/70 ---
+
+Response of request 58: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to communicate something specific? Let me know how I can help you.
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to communicate something specific? Let me know how I
+
+--- Sending prompt 60/70 ---
+
+Response of request 59: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+--- Sending prompt 61/70 ---
+
+Response of request 60: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+
+--- Sending prompt 62/70 ---
+
+Response of request 61: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It seems like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+
+--- Sending prompt 63/70 ---
+
+Response of request 62: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to convey a specific message? Let me know how I can assist you better.
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this repetition? Are you testing something or trying to convey a specific message? Let me
+
+--- Sending prompt 64/70 ---
+
+Response of request 63: <think>
+Okay, I see you've been repeating "hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 65/70 ---
+
+Response of request 64: <think>
+Okay, I see you're sending a lot of "hi hi hi" messages. It seems like you might be testing or practicing something. Let me know how I can help you! Are you trying to send a message or test the system? If you have a specific question or need assistance with something, please let me know! I'm here to help! 😊
+
+</think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 66/70 ---
+
+Response of request 65: <think>
+Okay, I see you're sending a lot of "hi" messages. It seems like you might be testing or practicing something. If you have a specific question or need help with something, feel free to ask! I'm here to assist you. 😊
+
+If you're just saying "hi" repeatedly, maybe you're trying to see how I respond? Let me know how I can help!
+
+--- Sending prompt 67/70 ---
+
+Response of request 66: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+--- Sending prompt 68/70 ---
+
+Response of request 67: <think>
+Okay, I see you're sending a lot of "hi" messages. What's the purpose of this? Are you testing something or trying to communicate in a specific way? Let me know how I can assist you better. 😊
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's the purpose of this? Are you testing something or trying to communicate in a specific way? Let me know how I can assist you better. 😊
+
+--- Sending prompt 69/70 ---
+
+Response of request 68: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+</think>
+
+Okay, I see you're sending a lot of "hi" messages. What's going on? 😊
+
+
+
+--- Sending prompt 70/70 ---
+
+Response of request 69: <think>
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+
+</think>
+
+Okay, I see the pattern here. It looks like you're repeating the word "hi" multiple times. What's the purpose of this message? Are you testing something or is there a specific question you want to ask?
+</think>
+
+Okay, I see
+Warmup round mean TTFT: 1.278s
+Warmup round time: 69.193s
+Warmup round prompt count: 35
+Warmup round successful prompt count: 35
+[36;1m
+=== BENCHMARK RESULTS ===[0m
+[32mQuery round mean TTFT: 1.277s[0m
+[33mQuery round time: 137.591s[0m
+[35mQuery round prompt count: 70[0m
+[34mQuery round successful prompt count: 70[0m
