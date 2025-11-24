@@ -104,6 +104,8 @@ fi
 BASE_URL="http://localhost:8000"
 
 # Benchmark parameters
+TARGET_TOTAL_TOKENS=1000000 
+
 OUTPUT_LEN=100
 REPEAT_COUNT=2
 REPEAT_MODE="tile"
@@ -145,30 +147,29 @@ else
 fi
 
 echo "Starting benchmark..."
+echo "Targeting Total Tokens per Round: $TARGET_TOTAL_TOKENS (Dynamic Num Documents)"
 echo ""
 
 # Create summary file
 SUMMARY_FILE="${OUTPUT_PREFIX}_summary.csv"
-echo "ISL,Mean_TTFT,Query_Time,Prompt_Count" > "$SUMMARY_FILE"
+echo "ISL,Num_Docs,Mean_TTFT,Query_Time,Prompt_Count" > "$SUMMARY_FILE"
 
 # Run benchmark for each ISL value
 FAILED=0
 for isl in "${ISL_VALUES[@]}"; do
-  # Dynamic Document Calculation to force offloading
-  # Goal: Exceed ~850k tokens total to force eviction on 144GB GPU (assuming ~1.1M target)
-  case $isl in
-      6000)   CURRENT_NUM_DOCS=190 ;; # ~1.14M tokens
-      8000)   CURRENT_NUM_DOCS=140 ;; # ~1.12M tokens
-      16000)  CURRENT_NUM_DOCS=70  ;; # ~1.12M tokens
-      32000)  CURRENT_NUM_DOCS=35  ;; # ~1.12M tokens
-      64000)  CURRENT_NUM_DOCS=18  ;; # ~1.15M tokens
-      128000) CURRENT_NUM_DOCS=9   ;; # ~1.15M tokens
-      *)      CURRENT_NUM_DOCS=30  ;; # Fallback
-  esac
-
+  
+  # --- DYNAMIC CALCULATION ---
+  # Calculate required documents to hit target memory pressure
+  # We enforce a minimum of 4 documents to ensure rotation logic works
+  CALC_DOCS=$(( TARGET_TOTAL_TOKENS / isl ))
+  if [ "$CALC_DOCS" -lt 4 ]; then
+    CURRENT_NUM_DOCS=4
+  else
+    CURRENT_NUM_DOCS=$CALC_DOCS
+  fi
+  
   echo "====================================="
-  echo "Running benchmark with ISL: ${isl}"
-  echo "Documents: ${CURRENT_NUM_DOCS} (Total Context: $(( isl * CURRENT_NUM_DOCS )))"
+  echo "Running ISL: ${isl} | Docs: ${CURRENT_NUM_DOCS} | Est. Total Tokens: $(( isl * CURRENT_NUM_DOCS ))"
   echo "====================================="
   
   OUTPUT_FILE="${OUTPUT_PREFIX}_isl_${isl}.log"
@@ -191,7 +192,8 @@ for isl in "${ISL_VALUES[@]}"; do
     QUERY_TIME=$(grep "Query round time:" "$OUTPUT_FILE" | awk '{print $4}' | sed 's/s//')
     PROMPT_COUNT=$(grep "Query round prompt count:" "$OUTPUT_FILE" | awk '{print $5}')
     
-    echo "${isl},${MEAN_TTFT},${QUERY_TIME},${PROMPT_COUNT}" >> "$SUMMARY_FILE"
+    # Added CURRENT_NUM_DOCS to the CSV output
+    echo "${isl},${CURRENT_NUM_DOCS},${MEAN_TTFT},${QUERY_TIME},${PROMPT_COUNT}" >> "$SUMMARY_FILE"
   else
     echo "❌ ISL ${isl} failed"
     FAILED=1
