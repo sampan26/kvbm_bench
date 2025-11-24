@@ -65,7 +65,7 @@ services:
     volumes:
       - vllm_models:/app/models
       - /tmp:/tmp
-      - ~/.cache/huggingface:/root/.cache/huggingface
+      - /.cache/huggingface:/root/.cache/huggingface
     networks:
       - default
     restart: unless-stopped
