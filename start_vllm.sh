@@ -113,7 +113,7 @@ sleep 3
 case $CONFIG in
    "baseline")
        echo "Starting BASELINE configuration (no prefix caching, no connector)"
-       CMD="vllm serve $ENFORCE_EAGER --port $PORT --gpu-memory-utilization 0.80 --rope-scaling '{\"rope_type\":\"yarn\",\"factor\":4.0,\"original_max_position_embeddings\":32768}' --max-model-len 131072 --disable-log-requests"
+       CMD="vllm serve $ENFORCE_EAGER --port $PORT --gpu-memory-utilization 0.8 --rope-scaling '{\"rope_type\":\"yarn\",\"factor\":4.0,\"original_max_position_embeddings\":32768}' --max-model-len 131072 --disable-log-requests"
        ;;
   
    "production")
