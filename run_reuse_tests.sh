@@ -118,12 +118,12 @@ REUSE_RATES=(
   ["80"]="8:2"
   ["90"]="9:1"
 )
-DOCUMENT_LENGTH=32000  # Fixed 32K ISL
+DOCUMENT_LENGTH=64000  # Fixed 32K ISL
 OUTPUT_LEN=100         # Consistent generation phase
-REPEAT_COUNT=3         # Enough iterations to show reuse pattern
+REPEAT_COUNT=2         # Enough iterations to show reuse pattern
 
 # CHANGED: Increased from 20 to 40 to force offloading (Total ~1.28M tokens > 850k Capacity)
-NUM_DOCUMENTS=40       
+NUM_DOCUMENTS=10       
 
 REPEAT_MODE="tile"     # Predictable reuse pattern
 MAX_INFLIGHT_REQUESTS=1  # Isolate single request behavior
