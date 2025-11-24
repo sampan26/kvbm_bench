@@ -1,0 +1,127 @@
+Using base URL: http://localhost:8000/v1
+
+--- Sending prompt 1/5 ---
+
+Response of request 0: <think>
+Okay, the user has sent a message with a lot of repeated "hi" words. Let me see... They might be testing if I can handle repetitive text or maybe they're trying to see how I respond to spam. First, I should acknowledge their message but also let them know that repeating "hi" isn't helpful. I need to be polite and offer assistance. Maybe they have a specific question but didn't phrase it properly. I should ask them to clarify what they need help
+
+--- Sending prompt 2/5 ---
+
+Response of request 1: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "1xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 3/5 ---
+
+Response of request 2: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "2xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 4/5 ---
+
+Response of request 3: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "3xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 5/5 ---
+
+Response of request 4: <think>
+Okay, the user has sent a message with a lot of "hi" repeated multiple times. It looks like they might be testing the system or just sending a lot of text. Let me check the message again.
+
+The message is: "4xxhi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+Repeat mode:  tile
+------warm up round------
+
+--- Sending prompt 1/5 ---
+
+Response of request 0: <think>
+</think>
+
+Okay, it looks like you're sending a lot of "hi" messages. Are you trying to test how I respond to repetitive text? Or is there something specific you need help with? I'm here to assist you! Just let me know what you need, and I'll do my best to help. 😊
+
+--- Sending prompt 2/5 ---
+
+Response of request 1: </think>
+
+Okay, I see the user is sending a lot of "hi" repeated multiple times. It seems like they might be testing the system's response to repetitive text. I need to respond in a friendly and helpful way. Let me check if there's a specific question or request they have. Maybe they're just checking if I can handle repetitive inputs or if they need assistance. I should acknowledge their message and ask how I can help. Let me make sure to keep the response friendly and open
+
+--- Sending prompt 3/5 ---
+
+Response of request 2: </think>
+</think>
+
+Okay, it seems like you're sending a lot of "hi" messages. Are you testing the system or just having fun with the repetition? I'm here to help! If you have any questions or need assistance, feel free to ask me anything. 😊
+
+--- Sending prompt 4/5 ---
+
+Response of request 3: <think>
+Okay, I see that you're sending a lot of "hi" messages. It seems like you might be testing the system or just practicing typing. If you have a question or need help with something, feel free to ask! I'm here to assist you. What can I do for you? 😊
+</think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 5/5 ---
+
+Response of request 4: <think>
+Okay, I see you're sending a lot of "hi" messages. What's going on? Are you testing something or is there a specific question you want to ask? I'm here to help! 😊
+
+It seems like you're sending a lot of "hi" messages. Are you trying to test the system or is there a specific question you'd like to ask? I'm here to help! 😊
+
+I notice you're sending many "hi" messages. Is
+------query round------
+
+--- Sending prompt 1/10 ---
+
+Response of request 0: <think>
+Okay, I see that you're sending a lot of "hi" messages. Maybe you're having trouble with something? Let me know what you need assistance with? I'm here to help you with. Please let me know how I can assist you. I'm here to help you. If you have any questions or need information, feel free to ask! hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 2/10 ---
+
+Response of request 1: <think>
+Okay, it looks like they're sending a lot of "hi" messages. They might be testing how I handle spam or just having fun. I should respond politely and offer assistance. Let me ask them what they need. I'll keep it simple and open-ended to engage them. Let me respond with a greeting or have a question. Let me ask them to clarify what they need. Let me respond in a question. Maybe they're just hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 3/10 ---
+
+Response of request 2: <think>
+Okay, the user is sending a lot of "hi" repeated multiple times. Maybe they're trying to see how it responds to repetitive text? Let me know how I can assist you. Let me know what you need help with, I'm here to help. Just let me know what you need!
+
+--- Sending prompt 4/10 ---
+
+Response of request 3: <think>
+Okay, the user is sending a lot of "hi" messages. Maybe you're having trouble with something, or perhaps you're curious how it responds. Let me know what you need assistance with, I'm here to let me know. Just hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 5/10 ---
+
+Response of request 4: <think>
+Okay, it looks like you're sending repeated "hi"s. If you have a question or need assistance with something? Let me know how I can assist you with. Please feel free to ask anything you need help with. Let me know hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 6/10 ---
+
+Response of request 5: </think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 7/10 ---
+
+Response of request 6: </think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 8/10 ---
+
+Response of request 7: </think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 9/10 ---
+
+Response of request 8: </think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+
+--- Sending prompt 10/10 ---
+
+Response of request 9: </think> hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi hi
+Warmup round mean TTFT: 4.337s
+Warmup round time: 28.917s
+Warmup round prompt count: 5
+Warmup round successful prompt count: 5
+[36;1m
+=== BENCHMARK RESULTS ===[0m
+[32mQuery round mean TTFT: 3.794s[0m
+[33mQuery round time: 53.160s[0m
+[35mQuery round prompt count: 10[0m
+[34mQuery round successful prompt count: 10[0m
