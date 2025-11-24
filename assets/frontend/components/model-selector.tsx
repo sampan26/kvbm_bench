@@ -25,6 +25,16 @@ const baseModels = [
     apiKeyName: "NVIDIA_API_KEY",
     baseURL: "https://integrate.api.nvidia.com/v1",
   },
+  // Preset vLLM model (default)
+  {
+    id: "vllm-llama3.2-3b",
+    name: "vLLM Llama 3.2 3B",
+    icon: <Server className="h-4 w-4 text-blue-500" />,
+    description: "Local vLLM server with Llama-3.2-3B-Instruct model",
+    model: "meta-llama/Llama-3.2-3B-Instruct",
+    baseURL: "http://localhost:8001/v1",
+    provider: "vllm",
+  },
   // Preset Ollama model
   {
     id: "ollama-llama3.1:8b",
@@ -36,8 +46,6 @@ const baseModels = [
     provider: "ollama",
   },
 ]
-
-// vLLM models removed per user request
 
 // Helper function to create Ollama model objects
 const createOllamaModel = (modelName: string) => ({
@@ -53,7 +61,10 @@ const createOllamaModel = (modelName: string) => ({
 export function ModelSelector() {
   const [models, setModels] = useState(() => [...baseModels])
   const [selectedModel, setSelectedModel] = useState(() => {
-    // Try to find a default Ollama model first
+    // Try to find a default vLLM model first (new default)
+    const defaultVllm = models.find(m => m.provider === "vllm")
+    if (defaultVllm) return defaultVllm
+    // Fallback to Ollama if vLLM not available
     const defaultOllama = models.find(m => m.provider === "ollama")
     return defaultOllama || models[0]
   })

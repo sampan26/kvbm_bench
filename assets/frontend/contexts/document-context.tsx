@@ -33,7 +33,7 @@ export type Document = {
   }
 }
 
-export type LLMProvider = 'nvidia' | 'ollama';
+export type LLMProvider = 'nvidia' | 'ollama' | 'vllm';
 
 export type ProcessingOptions = {
   useLangChain?: boolean;
@@ -42,6 +42,8 @@ export type ProcessingOptions = {
   llmProvider?: LLMProvider;
   ollamaModel?: string;
   ollamaBaseUrl?: string;
+  vllmModel?: string;
+  vllmBaseUrl?: string;
   chunkSize?: number;
   overlapSize?: number;
   chunkingMethod?: 'optimized' | 'pyg';
@@ -373,7 +375,12 @@ export function DocumentProvider({ children }: { children: React.ReactNode }) {
     if (selectedModel) {
       try {
         const model = JSON.parse(selectedModel);
-        if (model.provider === "ollama") {
+        if (model.provider === "vllm") {
+          requestBody.llmProvider = "vllm";
+          requestBody.vllmModel = model.model || "meta-llama/Llama-3.2-3B-Instruct";
+          requestBody.vllmBaseUrl = model.baseURL || "http://localhost:8001/v1";
+          console.log(`🚀 Using vLLM model: ${requestBody.vllmModel}`);
+        } else if (model.provider === "ollama") {
           requestBody.llmProvider = "ollama";
           requestBody.ollamaModel = model.model || "llama3.1:8b";
           console.log(`🦙 Using Ollama model: ${requestBody.ollamaModel}`);
@@ -386,7 +393,7 @@ export function DocumentProvider({ children }: { children: React.ReactNode }) {
         console.log(`⚠️ Error parsing selected model, using default`);
       }
     } else {
-      console.log(`⚠️ No selected model found, using default`);
+      console.log(`⚠️ No selected model found, using default (vLLM)`);
     }
 
     const response = await fetch("/api/extract-triples", {
@@ -426,9 +433,11 @@ export function DocumentProvider({ children }: { children: React.ReactNode }) {
       useLangChain = false,
       useGraphTransformer = false,
       promptConfigs,
-      llmProvider = 'ollama',
+      llmProvider = 'vllm',
       ollamaModel = 'qwen3:1.7b',
       ollamaBaseUrl = 'http://localhost:11434/v1',
+      vllmModel = 'meta-llama/Llama-3.2-3B-Instruct',
+      vllmBaseUrl = 'http://localhost:8001/v1',
       chunkSize = 64000,
       overlapSize = 2000,
       chunkingMethod = 'optimized'
@@ -438,6 +447,8 @@ export function DocumentProvider({ children }: { children: React.ReactNode }) {
       llmProvider,
       ollamaModel,
       ollamaBaseUrl,
+      vllmModel,
+      vllmBaseUrl,
       chunkSize,
       overlapSize,
       chunkingMethod
@@ -463,6 +474,8 @@ export function DocumentProvider({ children }: { children: React.ReactNode }) {
       llmProvider?: LLMProvider;
       ollamaModel?: string;
       ollamaBaseUrl?: string;
+      vllmModel?: string;
+      vllmBaseUrl?: string;
       chunkSize?: number;
       overlapSize?: number;
       chunkingMethod?: 'optimized' | 'pyg';
@@ -607,6 +620,12 @@ export function DocumentProvider({ children }: { children: React.ReactNode }) {
                 }
                 if (llmOptions.ollamaBaseUrl) {
                   requestBody.ollamaBaseUrl = llmOptions.ollamaBaseUrl;
+                }
+                if (llmOptions.vllmModel) {
+                  requestBody.vllmModel = llmOptions.vllmModel;
+                }
+                if (llmOptions.vllmBaseUrl) {
+                  requestBody.vllmBaseUrl = llmOptions.vllmBaseUrl;
                 }
               }
               

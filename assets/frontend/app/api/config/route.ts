@@ -9,6 +9,7 @@ export async function GET() {
     ollamaModel: process.env.OLLAMA_MODEL || 'qwen3:1.7b',
     vllmBaseUrl: process.env.VLLM_BASE_URL || 'http://localhost:8001/v1',
     vllmModel: process.env.VLLM_MODEL || 'meta-llama/Llama-3.2-3B-Instruct',
+    defaultProvider: process.env.VLLM_BASE_URL ? 'vllm' : (process.env.OLLAMA_BASE_URL ? 'ollama' : 'vllm'),
     // Add other config values as needed
   });
 } 

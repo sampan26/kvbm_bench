@@ -24,7 +24,7 @@ while [[ $# -gt 0 ]]; do
       echo "  --complete        Use complete stack (vLLM, Pinecone, Sentence Transformers)"
       echo "  --help, -h        Show this help message"
       echo ""
-      echo "Default: Starts minimal stack with Ollama, ArangoDB, and Next.js frontend"
+      echo "Default: Starts minimal stack with vLLM, ArangoDB, and Next.js frontend"
       echo ""
       echo "Examples:"
       echo "  ./start.sh                # Start minimal demo (recommended)"
@@ -81,10 +81,10 @@ fi
 # Build the docker-compose command
 if [ "$USE_COMPLETE" = true ]; then
   CMD="$DOCKER_COMPOSE_CMD -f $(pwd)/deploy/compose/docker-compose.complete.yml"
-  echo "Using complete stack (Ollama, vLLM, Pinecone, Sentence Transformers)..."
+  echo "Using complete stack (vLLM, Pinecone, Sentence Transformers)..."
 else
   CMD="$DOCKER_COMPOSE_CMD -f $(pwd)/deploy/compose/docker-compose.yml"
-  echo "Using minimal configuration (Ollama + ArangoDB only)..."
+  echo "Using minimal configuration (vLLM + ArangoDB only)..."
 fi
 
 # Execute the command
@@ -102,7 +102,7 @@ echo ""
 echo "Core Services:"
 echo "  • Web UI: http://localhost:3001"
 echo "  • ArangoDB: http://localhost:8529"
-echo "  • Ollama API: http://localhost:11434"
+echo "  • vLLM API: http://localhost:8001"
 echo ""
 
 if [ "$USE_COMPLETE" = true ]; then
@@ -114,9 +114,7 @@ if [ "$USE_COMPLETE" = true ]; then
 fi
 
 echo "Next steps:"
-echo "  1. Pull an Ollama model (if not already done):"
-echo "     docker exec ollama-compose ollama pull llama3.1:8b"
-echo ""
+echo "  1. Wait for vLLM to finish loading the model (check logs with: docker logs vllm-service)"
 echo "  2. Open http://localhost:3001 in your browser"
 echo "  3. Upload documents and start building your knowledge graph!"
 echo ""

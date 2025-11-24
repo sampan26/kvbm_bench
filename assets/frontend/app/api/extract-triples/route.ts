@@ -36,8 +36,81 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Text is required' }, { status: 400 });
     }
 
-    // If Ollama is specified, call llmService directly (avoid internal fetch timeout)
-    if (llmProvider === 'ollama') {
+    // Default to vLLM if no provider is specified
+    const effectiveProvider = llmProvider || 'vllm';
+
+    // If vLLM is specified (or is default), use the vLLM API endpoint
+    if (effectiveProvider === 'vllm') {
+      console.log(`[${new Date().toISOString()}] extract-triples: Processing with vLLM model: ${vllmModel || 'meta-llama/Llama-3.2-3B-Instruct'}`);
+      const llmStartTime = Date.now();
+      
+      try {
+        const model = vllmModel || 'meta-llama/Llama-3.2-3B-Instruct';
+        const messages = [
+          {
+            role: 'system' as const,
+            content: 'You are a knowledge graph builder. Extract subject-predicate-object triples from text and return them as a JSON array.'
+          },
+          {
+            role: 'user' as const,
+            content: `Extract triples from this text:\n\n${text}`
+          }
+        ];
+
+        console.log(`[${new Date().toISOString()}] extract-triples: Calling llmService.generateVllmCompletion directly`);
+        const response = await llmService.generateVllmCompletion(
+          model,
+          messages,
+          { temperature: 0.1, maxTokens: 8192 }
+        );
+
+        const llmDuration = ((Date.now() - llmStartTime) / 1000).toFixed(2);
+        console.log(`[${new Date().toISOString()}] extract-triples: LLM completion received after ${llmDuration}s, response length: ${response?.length || 0}`);
+
+        // Parse the response to extract triples
+        let triples = [];
+        try {
+          const jsonMatch = response.match(/\[[\s\S]*\]/);
+          if (jsonMatch) {
+            triples = JSON.parse(jsonMatch[0]);
+          } else {
+            // Fallback parser
+            triples = parseTriplesFallback(response);
+          }
+        } catch (parseError) {
+          console.warn('Failed to parse JSON response, using fallback parser:', parseError);
+          triples = parseTriplesFallback(response);
+        }
+
+        const totalDuration = ((Date.now() - llmStartTime) / 1000).toFixed(2);
+        console.log(`[${new Date().toISOString()}] extract-triples: Returning ${triples.length} triples, total duration: ${totalDuration}s`);
+
+        return NextResponse.json({
+          triples: triples.map((triple) => ({
+            ...triple,
+            confidence: 0.8,
+            metadata: {
+              entityTypes: [],
+              source: text.substring(0, 100) + '...',
+              context: text.substring(0, 200) + '...',
+              extractionMethod: 'vllm',
+              model: model
+            }
+          })),
+          count: triples.length,
+          success: true,
+          method: 'vllm',
+          model: model
+        });
+      } catch (llmError) {
+        const llmDuration = ((Date.now() - llmStartTime) / 1000).toFixed(2);
+        console.error(`[${new Date().toISOString()}] extract-triples: vLLM processing failed after ${llmDuration}s:`, llmError);
+        throw llmError;
+      }
+    }
+
+    // If Ollama is explicitly specified, call llmService directly (avoid internal fetch timeout)
+    if (effectiveProvider === 'ollama') {
       console.log(`[${new Date().toISOString()}] extract-triples: Processing with Ollama model: ${ollamaModel || 'llama3.1:8b'}`);
       const llmStartTime = Date.now();
       
@@ -104,29 +177,6 @@ export async function POST(req: NextRequest) {
         console.error(`[${new Date().toISOString()}] extract-triples: Ollama processing failed after ${llmDuration}s:`, llmError);
         throw llmError;
       }
-    }
-
-    // If vLLM is specified, use the vLLM API endpoint
-    if (llmProvider === 'vllm') {
-      const vllmResponse = await fetch(`${req.nextUrl.origin}/api/vllm`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          text,
-          model: vllmModel || 'meta-llama/Llama-3.2-3B-Instruct',
-          temperature: 0.1,
-          maxTokens: 8192
-        })
-      });
-
-      if (!vllmResponse.ok) {
-        throw new Error(`vLLM API error: ${vllmResponse.statusText}`);
-      }
-
-      const vllmResult = await vllmResponse.json();
-      return NextResponse.json(vllmResult);
     }
 
     // Configure TextProcessor for the specified LLM provider

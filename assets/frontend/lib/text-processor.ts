@@ -71,7 +71,7 @@ export class TextProcessor {
   private llm: ChatOpenAI | null = null;
   private tripleParser: StructuredOutputParser<any> | null = null;
   private extractionTemplate: PromptTemplate | null = null;
-  private selectedLLMProvider: 'ollama' | 'nvidia' | 'vllm' = 'ollama';
+  private selectedLLMProvider: 'ollama' | 'nvidia' | 'vllm' = 'vllm';
   private ollamaModel: string = 'llama3.1:8b';
   private ollamaBaseUrl: string = 'http://localhost:11434/v1';
   private vllmModel: string = 'meta-llama/Llama-3.2-3B-Instruct';
@@ -90,14 +90,18 @@ export class TextProcessor {
     this.vllmModel = process.env.VLLM_MODEL || 'meta-llama/Llama-3.2-3B-Instruct';
     
     // Determine which LLM provider to use based on configuration
-    // Priority: vLLM > NVIDIA > Ollama
-    if (process.env.VLLM_BASE_URL) {
+    // Priority: vLLM > NVIDIA > Ollama (vLLM is now default)
+    if (process.env.VLLM_BASE_URL || !process.env.OLLAMA_BASE_URL) {
+      // Default to vLLM if VLLM_BASE_URL is set or if Ollama is not explicitly configured
       this.selectedLLMProvider = 'vllm';
     } else if (process.env.NVIDIA_API_KEY) {
       this.selectedLLMProvider = 'nvidia';
-    } else {
-      // Default to Ollama (no API key required)
+    } else if (process.env.OLLAMA_BASE_URL) {
+      // Only use Ollama if explicitly configured
       this.selectedLLMProvider = 'ollama';
+    } else {
+      // Default to vLLM
+      this.selectedLLMProvider = 'vllm';
     }
   }
 
