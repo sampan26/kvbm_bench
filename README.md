@@ -1,166 +1,167 @@
-# NVIDIA txt2kg
+# Text to Knowledge Graph
+
+> Transform unstructured text into interactive knowledge graphs with LLM inference and graph visualization
+
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Instructions](#instructions)
+- [Troubleshooting](#troubleshooting)
+
+---
 
 ## Overview
 
-This playbook serves as a reference solution for knowledge graph extraction and querying with Retrieval Augmented Generation (RAG). This txt2kg playbook extracts knowledge triples from text and constructs a knowledge graph for visualization and querying, creating a more structured form of information retrieval compared to traditional RAG approaches. By leveraging graph databases and entity relationships, this playbook delivers more contextually rich answers that better represent complex relationships in your data.
+## Basic idea
 
-<details>
-<summary>📋 Table of Contents</summary>
+This playbook demonstrates how to build and deploy a comprehensive knowledge graph generation and visualization solution that serves as a reference for knowledge graph extraction.
+The unified memory architecture enables running larger, more accurate models that produce higher-quality knowledge graphs and deliver superior downstream GraphRAG performance.
+
+This txt2kg playbook transforms unstructured text documents into structured knowledge graphs using:
+- **Knowledge Triple Extraction**: Using Ollama with GPU acceleration for local LLM inference to extract subject-predicate-object relationships
+- **Graph Database Storage**: ArangoDB for storing and querying knowledge triples with relationship traversal
+- **GPU-Accelerated Visualization**: Three.js WebGPU rendering for interactive 2D/3D graph exploration
+
+> **Future Enhancements**: Vector embeddings and GraphRAG capabilities are planned enhancements.
+
+## What you'll accomplish
+
+You will have a fully functional system capable of processing documents, generating and editing knowledge graphs, and providing querying, accessible through an interactive web interface.
+The setup includes:
+- **Local LLM Inference**: Ollama for GPU-accelerated LLM inference with no API keys required
+- **Graph Database**: ArangoDB for storing and querying triples with relationship traversal
+- **Interactive Visualization**: GPU-accelerated graph rendering with Three.js WebGPU
+- **Modern Web Interface**: Next.js frontend with document management and query interface
+- **Fully Containerized**: Reproducible deployment with Docker Compose and GPU support
+
+## Prerequisites
+
+-  DGX Spark with latest NVIDIA drivers
+-  Docker installed and configured with NVIDIA Container Toolkit
+-  Docker Compose
 
 
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Software Components](#software-components)
-- [Technical Diagram](#technical-diagram)
-- [Minimum System Requirements](#minimum-system-requirements)
-- [Deployment Guide](#deployment-guide)
-- [Available Customizations](#available-customizations)
-- [License](#license)
+## Time & risk
 
-</details>
+- **Duration**:
+  - 2-3 minutes for initial setup and container deployment
+  - 5-10 minutes for Ollama model download (depending on model size)
+  - Immediate document processing and knowledge graph generation
 
-By default, this playbook leverages **Ollama** for local LLM inference, providing a fully self-contained solution that runs entirely on your own hardware. You can optionally use NVIDIA-hosted models available in the [NVIDIA API Catalog](https://build.nvidia.com) for advanced capabilities.
+- **Risks**:
+  - GPU memory requirements depend on chosen Ollama model size
+  - Document processing time scales with document size and complexity
 
-## Key Features
+- **Rollback**: Stop and remove Docker containers, delete downloaded models if needed
+- **Last Updated**: 11/19/2025
+  - Updated GPU Visualization Service
 
-![Screenshot](./frontend/public/txt2kg.png)
+## Instructions
 
-- Knowledge triple extraction from text documents
-- Knowledge graph construction and visualization
-- **Local-first architecture** with Ollama for LLM inference
-- Graph database integration with ArangoDB
-- Interactive knowledge graph visualization with Three.js WebGPU
-- GPU-accelerated LLM inference with Ollama
-- Fully containerized deployment with Docker Compose
-- Optional NVIDIA API integration for cloud-based models
-- Optional vector search and advanced inference capabilities
-- Optional graph-based RAG for contextual answers
+## Step 1. Clone the repository
 
-## Software Components
+In a terminal, clone the txt2kg repository and navigate to the project directory.
 
-### Core Components (Default)
-
-* **LLM Inference**
-  * **Ollama**: Local LLM inference with GPU acceleration
-    * Default model: `llama3.1:8b`
-    * Supports any Ollama-compatible model
-* **Knowledge Graph Database**
-  * **ArangoDB**: Graph database for storing knowledge triples (entities and relationships)
-    * Web interface on port 8529
-    * No authentication required (configurable)
-* **Graph Visualization**
-  * **Three.js WebGPU**: Client-side GPU-accelerated graph rendering
-* **Frontend & API**
-  * **Next.js**: Modern React framework with API routes
-
-### Optional Components
-
-* **Vector Database & Embedding** (with `--complete` flag)
-  * **SentenceTransformer**: Local embedding generation (model: `all-MiniLM-L6-v2`)
-  * **Pinecone**: Self-hosted vector storage and similarity search
-* **Cloud Models** (configure separately)
-  * **NVIDIA API**: Cloud-based models via NVIDIA API Catalog
-
-## Technical Diagram
-
-### Default Architecture (Minimal Setup)
-
-The core workflow for knowledge graph building and visualization:
-1. User uploads documents through the txt2kg web UI
-2. Documents are processed and chunked for analysis
-3. **Ollama** extracts knowledge triples (subject-predicate-object) from the text using local LLM inference
-4. Triples are stored in **ArangoDB** graph database
-5. Knowledge graph is visualized with **Three.js WebGPU** rendering in the browser
-6. Users can query the graph and generate insights using Ollama
-
-### Future Enhancements
-
-Additional capabilities can be added:
-- **Vector search**: Add semantic similarity search with local Pinecone and SentenceTransformer embeddings
-- **S3 storage**: MinIO for scalable document storage
-- **GNN-based GraphRAG**: Graph Neural Networks for enhanced retrieval
-
-## GPU-Accelerated LLM Inference
-
-This playbook includes **GPU-accelerated LLM inference** with Ollama:
-
-### Ollama Features
-- **Fully local inference**: No cloud dependencies or API keys required
-- **GPU acceleration**: Automatic CUDA support with NVIDIA GPUs
-- **Multiple model support**: Use any Ollama-compatible model
-- **Optimized inference**: Flash attention, KV cache optimization, and quantization
-- **Easy model management**: Pull and switch models with simple commands
-- **Privacy-first**: All data processing happens on your hardware
-
-### Default Configuration
-- Model: `llama3.1:8b`
-- GPU memory fraction: 0.9 (90% of available VRAM)
-- Flash attention enabled
-- Q8_0 KV cache for memory efficiency
-
-## Software Requirements
-
-- CUDA 12.0+
-- Docker with NVIDIA Container Toolkit
-
-## Deployment Guide
-
-### Environment Variables
-
-**No API keys required for default deployment!** All services run locally.
-
-The default configuration uses:
-- Local Ollama (no API key needed)
-- Local ArangoDB (no authentication by default)
-
-Optional environment variables for customization:
 ```bash
-# Ollama configuration (optional - defaults are set)
-OLLAMA_BASE_URL=http://ollama:11434/v1
-OLLAMA_MODEL=llama3.1:8b
-
-# NVIDIA API (optional - for cloud models)
-NVIDIA_API_KEY=your-nvidia-api-key
+git clone https://github.com/NVIDIA/dgx-spark-playbooks
+cd dgx-spark-playbook/nvidia/txt2kg/assets
 ```
 
-### Quick Start
+## Step 2. Start the txt2kg services
 
-1. **Clone the repository:**
-```bash
-git clone <repository-url>
-cd txt2kg
-```
+Use the provided start script to launch all required services. This will set up Ollama, ArangoDB, and the Next.js frontend:
 
-2. **Start the application:**
 ```bash
 ./start.sh
 ```
 
-That's it! No configuration needed. The script will:
-- Start all required services with Docker Compose
+The script will automatically:
+- Check for GPU availability
+- Start Docker Compose services
 - Set up ArangoDB database
-- Launch Ollama with GPU acceleration
-- Start the Next.js frontend
+- Launch the web interface
 
-3. **Pull an Ollama model (first time only):**
+## Step 3. Pull an Ollama model (optional)
+
+Download a language model for knowledge extraction. The default model loaded is Llama 3.1 8B:
+
 ```bash
-docker exec ollama-compose ollama pull llama3.1:8b
+docker exec ollama-compose ollama pull <model-name>
 ```
 
-4. **Access the application:**
-- **Web UI**: http://localhost:3001
-- **ArangoDB**: http://localhost:8529 (no authentication required)
+Browse available models at [https://ollama.com/search](https://ollama.com/search)
+
+> [!NOTE]
+> The unified memory architecture enables running larger models like 70B parameters, which produce significantly more accurate knowledge triples.
+
+## Step 4. Access the web interface
+
+Open your browser and navigate to:
+
+```
+http://localhost:3001
+```
+
+You can also access individual services:
+- **ArangoDB Web Interface**: http://localhost:8529 
 - **Ollama API**: http://localhost:11434
 
-## Available Customizations
+## Step 5. Upload documents and build knowledge graphs
 
-- **Switch Ollama models**: Use any model from Ollama's library (Llama, Mistral, Qwen, etc.)
-- **Modify extraction prompts**: Customize how triples are extracted from text
-- **Add domain-specific knowledge sources**: Integrate external ontologies or taxonomies
-- **Use NVIDIA API**: Connect to cloud models for specific use cases
+#### 5.1. Document Upload
+- Use the web interface to upload text documents (markdown, text, CSV supported)
+- Documents are automatically chunked and processed for triple extraction
 
-## License
+#### 5.2. Knowledge Graph Generation
+- The system extracts subject-predicate-object triples using Ollama
+- Triples are stored in ArangoDB for relationship querying
 
-[MIT](LICENSE)
+#### 5.3. Interactive Visualization
+- View your knowledge graph in 2D or 3D with GPU-accelerated rendering
+- Explore nodes and relationships interactively
 
-This project will download and install additional third-party open source software projects and containers.
+#### 5.4. Graph-based Queries
+- Ask questions about your documents using the query interface
+- Graph traversal enhances context with entity relationships from ArangoDB
+- LLM generates responses using the enriched graph context
+
+> **Future Enhancement**: GraphRAG capabilities with vector-based KNN search for entity retrieval are planned.
+
+## Step 6. Cleanup and rollback
+
+Stop all services and optionally remove containers:
+
+```bash
+## Stop services
+docker compose down
+
+## Remove containers and volumes (optional)
+docker compose down -v
+
+## Remove downloaded models (optional)
+docker exec ollama-compose ollama rm llama3.1:8b
+```
+
+## Step 7. Next steps
+
+- Experiment with different Ollama models for varied extraction quality
+- Customize triple extraction prompts for domain-specific knowledge
+- Explore advanced graph querying and visualization features
+
+## Troubleshooting
+
+| Symptom | Cause | Fix |
+|---------|--------|-----|
+| Ollama performance issues | Suboptimal settings for DGX Spark | Set environment variables:<br>`OLLAMA_FLASH_ATTENTION=1` (enables flash attention for better performance)<br>`OLLAMA_KEEP_ALIVE=30m` (keeps model loaded for 30 minutes)<br>`OLLAMA_MAX_LOADED_MODELS=1` (avoids VRAM contention)<br>`OLLAMA_KV_CACHE_TYPE=q8_0` (reduces KV cache VRAM with minimal performance impact) |
+| VRAM exhausted or memory pressure (e.g. when switching between Ollama models) | Linux buffer cache consuming GPU memory | Flush buffer cache: `sudo sync; sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'` |
+| Slow triple extraction | Large model or large context window | Reduce document chunk size or use faster models |
+| ArangoDB connection refused | Service not fully started | Wait 30s after start.sh, verify with `docker ps` |
+
+> [!NOTE]
+> DGX Spark uses a Unified Memory Architecture (UMA), which enables dynamic memory sharing between the GPU and CPU. 
+> With many applications still updating to take advantage of UMA, you may encounter memory issues even when within 
+> the memory capacity of DGX Spark. If that happens, manually flush the buffer cache with:
+```bash
+sudo sh -c 'sync; echo 3 > /proc/sys/vm/drop_caches'
+```

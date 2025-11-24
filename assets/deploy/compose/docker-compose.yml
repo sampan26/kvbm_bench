@@ -1,0 +1,97 @@
+services:
+  app:
+    build:
+      context: ../..
+      dockerfile: deploy/app/Dockerfile
+    ports:
+      - '3001:3000'
+    environment:
+      - ARANGODB_URL=http://arangodb:8529
+      - ARANGODB_DB=txt2kg
+      - LANGCHAIN_TRACING_V2=true
+      - GRPC_SSL_CIPHER_SUITES=HIGH+ECDSA:HIGH+aRSA
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+      - OLLAMA_BASE_URL=http://ollama:11434/v1
+      - OLLAMA_MODEL=llama3.1:8b
+      - REMOTE_WEBGPU_SERVICE_URL=http://txt2kg-remote-webgpu:8083
+      # Node.js timeout configurations for large model processing
+      - NODE_OPTIONS=--max-http-header-size=80000
+      - UV_THREADPOOL_SIZE=128
+      - HTTP_TIMEOUT=1800000
+      - REQUEST_TIMEOUT=1800000
+    networks:
+      - default
+      - txt2kg-network
+    depends_on:
+      - arangodb
+      - ollama
+  arangodb:
+    image: arangodb:latest
+    ports:
+      - '8529:8529'
+    environment:
+      - ARANGO_NO_AUTH=1
+    volumes:
+      - arangodb_data:/var/lib/arangodb3
+      - arangodb_apps_data:/var/lib/arangodb3-apps
+  arangodb-init:
+    image: arangodb:latest
+    depends_on:
+      arangodb:
+        condition: service_started
+    restart: on-failure
+    entrypoint: >
+      sh -c "
+        echo 'Waiting for ArangoDB to start...' &&
+        sleep 10 &&
+        echo 'Creating txt2kg database...' &&
+        arangosh --server.endpoint tcp://arangodb:8529 --server.authentication false --javascript.execute-string 'try { db._createDatabase(\"txt2kg\"); console.log(\"Database txt2kg created successfully!\"); } catch(e) { if(e.message.includes(\"duplicate\")) { console.log(\"Database txt2kg already exists\"); } else { throw e; } }'
+      "
+  ollama:
+    build:
+      context: ../services/ollama
+      dockerfile: Dockerfile
+    image: ollama-custom:latest
+    container_name: ollama-compose
+    ports:
+      - '11434:11434'
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_FLASH_ATTENTION=1          # Enable flash attention for better performance
+      - OLLAMA_KEEP_ALIVE=30m             # Keep models loaded for 30 minutes
+      - OLLAMA_CUDA=1                     # Enable CUDA acceleration
+      - OLLAMA_LLM_LIBRARY=cuda           # Use CUDA library for LLM operations
+      - OLLAMA_NUM_PARALLEL=1             # Process one request at a time for 70B models
+      - OLLAMA_MAX_LOADED_MODELS=1        # Load only one model at a time to avoid VRAM contention
+      - OLLAMA_KV_CACHE_TYPE=q8_0         # Reduce KV cache VRAM usage with minimal performance impact
+      - OLLAMA_GPU_LAYERS=999             # Use maximum GPU layers
+      - OLLAMA_GPU_MEMORY_FRACTION=0.9    # Use 90% of GPU memory
+      - CUDA_VISIBLE_DEVICES=0            # Use GPU 0 (change to 'all' for multi-GPU)
+    networks:
+      - default
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+volumes:
+  arangodb_data:
+  arangodb_apps_data:
+  ollama_data:
+
+networks:
+  default:
+    driver: bridge
+  txt2kg-network:
+    driver: bridge
