@@ -61,7 +61,7 @@ export async function POST(req: NextRequest) {
         const response = await llmService.generateVllmCompletion(
           model,
           messages,
-          { temperature: 0.1, maxTokens: 8192 }
+          { temperature: 0.1, maxTokens: 2048 }
         );
 
         const llmDuration = ((Date.now() - llmStartTime) / 1000).toFixed(2);
@@ -131,7 +131,7 @@ export async function POST(req: NextRequest) {
         const response = await llmService.generateOllamaCompletion(
           model,
           messages,
-          { temperature: 0.1, maxTokens: 8192 }
+          { temperature: 0.1, maxTokens: 2048 }
         );
 
         const llmDuration = ((Date.now() - llmStartTime) / 1000).toFixed(2);

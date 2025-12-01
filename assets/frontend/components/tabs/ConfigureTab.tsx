@@ -102,6 +102,8 @@ export function ConfigureTab() {
   const getModelIcon = (modelId: string) => {
     if (modelId?.startsWith("nvidia-")) {
       return <Cpu className="h-4 w-4 text-green-500" />
+    } else if (modelId?.startsWith("vllm-")) {
+      return <Zap className="h-4 w-4 text-blue-500" />
     } else if (modelId?.startsWith("ollama-")) {
       return <OllamaIcon className="h-4 w-4 text-orange-500" />
     }

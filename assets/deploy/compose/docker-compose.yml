@@ -62,6 +62,8 @@ services:
       - VLLM_PORT=8001
       - VLLM_HOST=0.0.0.0
       - CUDA_VISIBLE_DEVICES=0
+      - HF_TOKEN=REPLACE_WITH_YOUR_TOKEN
+      - HUGGING_FACE_HUB_TOKEN=REPLACE_WITH_YOUR_TOKEN
     volumes:
       - vllm_models:/app/models
       - /tmp:/tmp

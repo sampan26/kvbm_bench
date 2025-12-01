@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react"
 import { createPortal } from "react-dom"
-import { ChevronDown, Sparkles, Cpu, Server } from "lucide-react"
+import { ChevronDown, Sparkles, Cpu, Server, Zap } from "lucide-react"
 import { OllamaIcon } from "@/components/ui/ollama-icon"
 
 // Base models - NVIDIA NeMo as default (first in list)
@@ -29,7 +29,7 @@ const baseModels = [
   {
     id: "vllm-llama3.2-3b",
     name: "vLLM Llama 3.2 3B",
-    icon: <Server className="h-4 w-4 text-blue-500" />,
+    icon: <Zap className="h-4 w-4 text-blue-500" />,
     description: "Local vLLM server with Llama-3.2-3B-Instruct model",
     model: "meta-llama/Llama-3.2-3B-Instruct",
     baseURL: "http://localhost:8001/v1",

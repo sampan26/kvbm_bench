@@ -48,53 +48,47 @@ if torch.cuda.is_available():
 "
 
 echo "=== Starting optimized vLLM server ==="
-# Optimized configuration for DGX Spark performance with NVFP4 quantization
-# Available quantized models from NVIDIA
-NVFP4_MODEL="nvidia/Llama-3.3-70B-Instruct-FP4"
-NVFP8_MODEL="nvidia/Llama-3.1-8B-Instruct-FP8"
-STANDARD_MODEL="meta-llama/Llama-3.1-70B-Instruct"
 
-# Check GPU compute capability for optimal quantization
-COMPUTE_CAPABILITY=$(nvidia-smi -i 0 --query-gpu=compute_cap --format=csv,noheader,nounits 2>/dev/null || echo "unknown")
-echo "Detected GPU compute capability: $COMPUTE_CAPABILITY"
-
-# Configure quantization based on GPU architecture
-if [[ "$COMPUTE_CAPABILITY" == "12.1" ]] || [[ "$COMPUTE_CAPABILITY" == "10.0" ]]; then
-    # Blackwell/DGX Spark architecture - use standard 70B model with CPU offloading
-    echo "Using standard Llama-3.1-70B model for Blackwell/DGX Spark with CPU offloading"
-    QUANTIZATION_FLAG=""
-    MODEL_TO_USE="$STANDARD_MODEL"  # Use standard 70B model
-    GPU_MEMORY_UTIL="0.7"  # Lower GPU memory to allow unified memory
-    MAX_MODEL_LEN="4096"   # Shorter sequences for memory efficiency
-    MAX_NUM_SEQS="16"      # Lower concurrent sequences for 70B
-    MAX_BATCHED_TOKENS="4096"
-    CPU_OFFLOAD_GB="50"    # Offload 50GB to CPU/unified memory
-elif [[ "$COMPUTE_CAPABILITY" == "9.0" ]]; then
-    # Hopper architecture - use standard model
-    echo "Using standard 70B model for Hopper architecture"
-    QUANTIZATION_FLAG=""
-    MODEL_TO_USE="$STANDARD_MODEL"
-    GPU_MEMORY_UTIL="0.7"
-    MAX_MODEL_LEN="4096"
-    MAX_NUM_SEQS="16"
-    MAX_BATCHED_TOKENS="4096"
-    CPU_OFFLOAD_GB="40"
+# Ensure HuggingFace token is set and clear any cached tokens
+if [ -n "$HF_TOKEN" ]; then
+    export HUGGING_FACE_HUB_TOKEN="$HF_TOKEN"
+    echo "HuggingFace token is set (length: ${#HF_TOKEN})"
+    # Clear any cached tokens and login with the correct token
+    rm -rf /root/.cache/huggingface/token
+    rm -rf /root/.huggingface/token
+    echo "$HF_TOKEN" > /root/.cache/huggingface/token
+    # Login using huggingface-cli
+    python3 -c "from huggingface_hub import login; login(token='${HF_TOKEN}')"
+    echo "Logged in to HuggingFace"
+elif [ -n "$HUGGING_FACE_HUB_TOKEN" ]; then
+    export HF_TOKEN="$HUGGING_FACE_HUB_TOKEN"
+    echo "HuggingFace token is set from HUGGING_FACE_HUB_TOKEN (length: ${#HUGGING_FACE_HUB_TOKEN})"
+    # Clear any cached tokens and login with the correct token
+    rm -rf /root/.cache/huggingface/token
+    rm -rf /root/.huggingface/token
+    echo "$HUGGING_FACE_HUB_TOKEN" > /root/.cache/huggingface/token
+    # Login using huggingface-cli
+    python3 -c "from huggingface_hub import login; login(token='${HUGGING_FACE_HUB_TOKEN}')"
+    echo "Logged in to HuggingFace"
 else
-    # Other architectures - use standard precision
-    echo "Using standard 70B model for GPU architecture: $COMPUTE_CAPABILITY"
-    QUANTIZATION_FLAG=""
-    MODEL_TO_USE="$STANDARD_MODEL"
-    GPU_MEMORY_UTIL="0.7"
-    MAX_MODEL_LEN="2048"
-    MAX_NUM_SEQS="16"
-    MAX_BATCHED_TOKENS="2048"
-    CPU_OFFLOAD_GB="40"
+    echo "WARNING: No HuggingFace token found. Gated models will not work."
 fi
+
+# Use model from environment variable, or default to configured model
+MODEL_TO_USE="${VLLM_MODEL:-meta-llama/Llama-3.2-3B-Instruct}"
+QUANTIZATION_FLAG=""
+GPU_MEMORY_UTIL="${VLLM_GPU_MEMORY_UTILIZATION:-0.9}"
+MAX_MODEL_LEN="${VLLM_MAX_MODEL_LEN:-4096}"
+MAX_NUM_SEQS="${VLLM_MAX_NUM_SEQS:-256}"
+MAX_BATCHED_TOKENS="${VLLM_MAX_NUM_BATCHED_TOKENS:-8192}"
+CPU_OFFLOAD_GB="0"  # No CPU offload for smaller models
 
 echo "Using model: $MODEL_TO_USE"
 echo "Quantization: ${QUANTIZATION_FLAG:-'disabled'}"
 echo "GPU memory utilization: $GPU_MEMORY_UTIL"
-
+echo "Max model length: $MAX_MODEL_LEN"
+echo "Max num seqs: $MAX_NUM_SEQS"
+echo "Max batched tokens: $MAX_BATCHED_TOKENS"
 echo "CPU Offload: ${CPU_OFFLOAD_GB}GB"
 
 vllm serve "$MODEL_TO_USE" \
